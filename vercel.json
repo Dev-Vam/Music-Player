@@ -3,27 +3,3 @@
   "outputDirectory": ".",
   "cleanUrls": true
 }
-```
-
-Then in your project, you should have:
-```
-your-project/
-├── index.html
-├── package.json
-├── vercel.json
-└── (remove main.js - not needed for web)
-```
-
-## **Option 2: Separate Web and Desktop Versions**
-
-If you want BOTH web and desktop versions, create two folders:
-```
-music-player/
-├── web/
-│   ├── index.html
-│   ├── package.json
-│   └── vercel.json
-└── desktop/
-    ├── index.html
-    ├── main.js
-    └── package.json (with electron)
